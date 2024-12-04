@@ -1,0 +1,5 @@
+id,name,latitude,longitude,description,turbines
+1,Wind Farm A,51.505,-0.09,"A large wind farm with many turbines.","[{""id"": 1, ""name"": ""Turbine 1"", ""latitude"": 51.507, ""longitude"": -0.08, ""description"": ""Turbine near the coast.""},
+{""id"": 2, ""name"": ""Turbine 2"", ""latitude"": 51.508, ""longitude"": -0.07, ""description"": ""Turbine near the hill.""}]"
+2,Wind Farm B,51.515,-0.10,"Another large wind farm.","[{""id"": 1, ""name"": ""Turbine 1"", ""latitude"": 51.516, ""longitude"": -0.11, ""description"": ""Turbine in the valley.""},
+{""id"": 2, ""name"": ""Turbine 2"", ""latitude"": 51.517, ""longitude"": -0.12, ""description"": ""Turbine near the river.""}]"

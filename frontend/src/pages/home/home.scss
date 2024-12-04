@@ -1,0 +1,65 @@
+@import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
+
+.home {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns layout */
+  grid-auto-rows: minmax(180px, auto); /* Consistent row heights */
+  grid-auto-flow: dense;
+  
+  /* Set the entire background to a half-grey tone */
+  background-color: #d3d3d3; /* Light grey background */
+  min-height: 100vh; /* Ensures it covers the full screen height */
+  padding: 20px; /* Adds spacing around the content */
+
+  @include xl {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include lg {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include md {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Box styling */
+  .box {
+    padding: 20px;
+    border-radius: 10px;
+    border: none; /* Removed outline */
+    background-color: white; /* Changed background to white */
+  }
+
+  /* Adjust box positions */
+  .box1 {
+    grid-column: 1; /* First column */
+    grid-row: 1; /* First row */
+  }
+
+  .box6 {
+    grid-column: 2 / span 2; /* Centered in columns 2 and 3 */
+    grid-row: 2; /* Moved to the middle position in Row 2 */
+  }
+
+  .box5 {
+    grid-column: 4; /* Last column in Row 1 */
+    grid-row: 1; /* First row */
+    
+  }
+
+  .box3 {
+    grid-column: 1; /* First column in Row 2 */
+    grid-row: 2; /* Remain in Row 2 */
+  }
+
+  .box4 {
+    grid-column: 4; /* Last column in Row 2 */
+    grid-row: 2; /* Second row */
+  }
+
+  .box7 {
+    grid-column: 2 / span 2; /* Middle position in Row 1 */
+    grid-row: 1; /* First row */
+  }
+}

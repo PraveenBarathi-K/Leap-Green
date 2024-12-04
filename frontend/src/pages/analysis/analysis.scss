@@ -1,0 +1,36 @@
+.analysis-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  
+    h1 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+  
+    .turbine-table {
+      width: 100%;
+      border-collapse: collapse;
+  
+      th, td {
+        padding: 12px 15px;
+        text-align: left;
+      }
+  
+      th {
+        background-color: #007bff;
+        color: #fff;
+        font-weight: bold;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+  
+      tr:hover {
+        background-color: #ddd;
+      }
+    }
+  }
+  
